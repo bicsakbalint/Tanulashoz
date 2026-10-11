@@ -1,28 +1,29 @@
 main {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(back.jfif);
+    background-repeat: repeat;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin: auto;
     text-decoration: none;
     display: grid;
     gap: 50px;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: "head head head" "nav nav nav" "bal közép jobb" "foot foot foot";
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
 }
 
 header {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(206, 241, 3);
-    background-repeat: no-repeat;
+    background-image: url(background.jfif);
+    background-repeat: repeat;
     background-attachment: fixed;
     width: 100%;
     max-width: 1200px;
     background-size: inherit;
     grid-area: head;
+    display: grid
 }
 
 nav {
@@ -41,12 +42,12 @@ a {
     color: white;
     text-decoration: none;
     font-size: 13px;
-    gap: 5px;
+    gap: 10px;
 }
 
 h1 {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
 }
 
@@ -63,12 +64,11 @@ p {
 }
 
 header a:hover {
-    background-color: rgb(16, 255, 4);
-
+    background-color:rgb(0, 175, 175);
 }
 
 header a:link {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
 }
 
 nav a:link {
@@ -82,21 +82,21 @@ nav a:hover {
 a {
     text-align: center;
     padding: 4px;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    display: grid;
+    font-style: oblique;
 }
 
 header ul {
     color: beige;
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 0px;
-    list-style-type: none;
+    display: grid;
+    padding: 1px;
+    list-style-type:circle;
     text-decoration: none;
     text-align: center;
     column-gap: 5px;
-    margin-right: 5px;
+    font-size: 15px;
 }
 
 .bal {
@@ -105,4 +105,16 @@ header ul {
 
 .jobb {
     grid-area: jobb;
+}
+
+.hard a:link {
+    background-color: rgb(0, 255, 0);
+}
+
+.web a:link {
+    background-color: rgb(0, 255, 0);
+}
+
+.halozat a:link {
+    background-color: rgb(0, 255, 0);
 }
